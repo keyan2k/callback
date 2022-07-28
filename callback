@@ -1,0 +1,55 @@
+/*
+console.log("1");
+setTimeout(function fun (){
+console.log("2");
+},0);
+console.log("3");
+console.log("4");
+*/
+
+
+function office(name,email,password){
+
+ 
+
+
+setTimeout(function(){
+  if(name=="karthik"&email=="karthi@gmail.com"&password==12345){
+    console.log("DATA MATCHES :-) , Welcome back " + name);
+setTimeout(function(){
+  console.log("Loading please wait.....");
+},4000)
+    
+    
+     setTimeout(function(){
+    
+  
+console.log("Here are some Information about you-> NAME: "  + name + " , EMAIL: " + email + " , PASSWORD: "+password);
+    },6000);
+
+    setTimeout(function(){
+      var date  = new Date();
+      console.log("Todays Date: "+ date    );
+      console.log(" WORK STATUS :" + '\x1b[31m%s\x1b[0m', "No work assigned for today "+ name);
+      
+      
+    },8000);
+  }
+  else{
+    console.log('\x1b[31m%s\x1b[0m',"DATA DOES NOT MATCHES :( ");
+    console.log('\x1b[35m%s\x1b[0m',"Try with correct credentials later! ");
+  }
+
+
+},3000);
+
+  
+}
+ 
+
+var obj = office("karthik","karthi@gmail.com",12345);
+console.log(obj);
+
+
+
+
